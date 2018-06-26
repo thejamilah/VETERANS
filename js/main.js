@@ -35,3 +35,8 @@ case 'services':
 
 
 // functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
+
+// function to reset form selection...we can either use this in main.html <input type="reset" value="Reset" or this below in javascript pool...
+document.getElementById("reset").onclick = function() {
+  document.getElementById("number").value = "";
+};
