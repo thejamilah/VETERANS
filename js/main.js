@@ -1,7 +1,7 @@
 'use strict';
 
 // constructor function for what to pass to the changing form element. this will need work.
-function MakeForm(name){
+function MakeForm(name, type, id){
   this.name = name; // name of the button ex: "Education"
   this.type = type; // type of form element: "radio", "checkbox", etc.
   this.id = id; // and ID to html i think we need
