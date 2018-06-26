@@ -33,7 +33,10 @@ case 'services':
 }
 
 // event handler for when "Next" on html page is clicked. this should take the value of the forms and pass it to javascript as "valueIn"
-
+function getFormValue(){
+  var valueIn = document.querySelector('input[name='selector']:checked').value;
+  return valueIn;
+}
 
 
 // functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
