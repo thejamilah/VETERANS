@@ -14,24 +14,29 @@ function MakeForm(name, type, id){
 switch(valueIn){
 
 case 'education':
-  //code to change the form element to what we need after education is chosen
+  document.getElementById('startForm').style.display='none';
+  document.getElementById('showEduForm').style.display='block';
   break;
 
 case 'h-n-w':
-  //run some code here
+  document.getElementById('startForm').style.display='none';
+  document.getElementById('h-n-w').style.display='block';
   break;
 
-case 'homelessness':
-  //run some code here;
+case 'employment':
+  document.getElementById('startForm').style.display='none';
   break;
 
 case 'services':
-  //run some code here
+  document.getElementById('startForm').style.display='none';
   break;
 }
 
 // event handler for when "Next" on html page is clicked. this should take the value of the forms and pass it to javascript as "valueIn"
-
+document.getElementById('next').onclick = function getFormValue(event){
+  var valueIn = document.querySelector('input[name='selector']:checked').value;
+  return valueIn;
+}
 
 
 // functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
