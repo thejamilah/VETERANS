@@ -33,7 +33,7 @@ case 'services':
 }
 
 // event handler for when "Next" on html page is clicked. this should take the value of the forms and pass it to javascript as "valueIn"
-function getFormValue(){
+document.getElementById('next').onclick = function getFormValue(event){
   var valueIn = document.querySelector('input[name='selector']:checked').value;
   return valueIn;
 }
