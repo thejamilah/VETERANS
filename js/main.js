@@ -2,10 +2,10 @@
 
 // constructor function for what to pass to the changing form element
 function MakeForm(name){
-  this.name = name;
-  this.type = type;
-  this.id = id;
-  this.class;
+  this.name = name;  //name of the button ex: "Education"
+  this.type = type; // type of form element: "radio", "checkbox", etc.
+  this.id = id; // and ID to html i think we need
+  this.class; // possibly the class if we need to pass it class info for css
 }
 
 // switch case build for values returned from form
