@@ -58,4 +58,7 @@ document.getElementById("reset").onclick = function() {
 };
 
 // event handler
-element.addEventListener("click", function(); });
+var e = document.getElementById(next)
+e.addEventListener('next', proccessForm());
+// // storeform.innerHTML = '';
+// storeForm.addEventListener('submit', form);
