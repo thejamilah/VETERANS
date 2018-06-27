@@ -1,12 +1,17 @@
 'use strict';
 
-// constructor function for what to pass to the changing form element. this will need work.
-/*function MakeForm(name, type, id){
-  this.name = name; // name of the button ex: "Education"
-  this.type = type; // type of form element: "radio", "checkbox", etc.
-  this.id = id; // and ID to html i think we need
-  this.class; // possibly the class if we need to pass it class info for css
-} */
+//constructor function that holds data for different resources presented.
+
+function ResourceData(name, location, hours, phone, email){
+  this.name = name;
+  this.location = location;
+  this.hours = hours;
+  this.phone = phone;
+  this.email = email;
+}
+
+// we will need dom manip to present ResourceData / object data to a table / page or something
+// based on form input
 
 //function to handle the forms... should iterate through and find the checked box and return its value for use
 
