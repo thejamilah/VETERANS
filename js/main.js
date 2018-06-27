@@ -10,6 +10,8 @@
 
 //function to handle the forms... should iterate through and find the checked box and return its value for use
 
+var radios = document.getEleme
+
 function proccessForm(form){
 	for (var i = 0; i < form.Selector.length; i++) {
 	if (form.Selector[i].checked){
