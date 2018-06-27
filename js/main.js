@@ -8,6 +8,17 @@ function MakeForm(name, type, id){
   this.class; // possibly the class if we need to pass it class info for css
 }
 
+//function to handle the forms... should iterate through and find the checked box and return its value for use
+
+function proccessForm(form){
+	for (var i = 0; i < form.Selector.length; i++) {
+	if (form.Selector[i].checked){
+		break;
+		}
+	}
+	var valueIn = form.Selector.value;
+}
+
 // switch case build for values returned from form
 // 'valueIn' should come from event handler to decide what form was selected.
 // add more cases as needed for the form (there will be a lot)
