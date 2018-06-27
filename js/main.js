@@ -1,23 +1,13 @@
 'use strict';
 
 // constructor function for what to pass to the changing form element. this will need work.
-/*function MakeForm(name, type, id){
+function MakeForm(name, type, id){
   this.name = name; // name of the button ex: "Education"
   this.type = type; // type of form element: "radio", "checkbox", etc.
   this.id = id; // and ID to html i think we need
   this.class; // possibly the class if we need to pass it class info for css
-} */
-
-//function to handle the forms... should iterate through and find the checked box and return its value for use
-
-function proccessForm(form){
-	for (var i = 0; i < form.Selector.length; i++) {
-	if (form.Selector[i].checked){
-		break;
-		}
-	}
-	var valueIn = form.Selector.value;
-}
+  allResources.push(this);
+} 
 
 // switch case build for values returned from form
 // 'valueIn' should come from event handler to decide what form was selected.
@@ -25,34 +15,24 @@ function proccessForm(form){
 switch(valueIn){
 
 case 'education':
-  document.getElementById('startForm').style.display='none';
-  document.getElementById('showEduForm').style.display='block';
+  //code to change the form element to what we need after education is chosen
   break;
 
 case 'h-n-w':
-  document.getElementById('startForm').style.display='none';
-  document.getElementById('h-n-w').style.display='block';
+  //run some code here
   break;
 
-case 'employment':
-  document.getElementById('startForm').style.display='none';
+case 'homelessness':
+  //run some code here;
   break;
 
 case 'services':
-  document.getElementById('startForm').style.display='none';
+  //run some code here
   break;
 }
 
 // event handler for when "Next" on html page is clicked. this should take the value of the forms and pass it to javascript as "valueIn"
-document.getElementById('next').onclick = function getFormValue(event){
-  var valueIn = document.querySelector('input[name='Selector']:checked').value;
-  return valueIn;
-}
+
 
 
 // functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
-
-// function to reset form selection...we can either use this in main.html <input type="reset" value="Reset" or this below in javascript pool...
-document.getElementById("reset").onclick = function() {
-  document.getElementById("number").value = "";
-};
