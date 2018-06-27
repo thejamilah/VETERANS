@@ -56,3 +56,6 @@ document.getElementById('next').onclick = function getFormValue(event){
 document.getElementById("reset").onclick = function() {
   document.getElementById("number").value = "";
 };
+
+// event handler
+element.addEventListener("click", function(); });
