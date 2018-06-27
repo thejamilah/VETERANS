@@ -11,7 +11,7 @@ function ResourceData(name, location, hours, phone, email){
 }
 
 //example build out of one resource.... basically building our own database to draw from
-var nineEleven = new ResourceData('9/11 GI Bill', 'N/A', '8AM-5PM PST', '456-5656', 'va.gov.email@email.com')
+var nineEleven = new ResourceData('9/11 GI Bill', 'N/A', '8AM-5PM PST', '456-5656', 'va.gov.email@email.com');
 
 // we will need dom manip to present ResourceData / object data to a table / page or something
 // based on form input..... could be a function we build for it.
