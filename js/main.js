@@ -58,3 +58,9 @@ document.getElementById('next').onclick = function getFormValue(event){
 document.getElementById("reset").onclick = function() {
   document.getElementById("number").value = "";
 };
+
+// event handler
+var e = document.getElementById(next)
+e.addEventListener('next', proccessForm());
+// // storeform.innerHTML = '';
+// storeForm.addEventListener('submit', form);
