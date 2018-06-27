@@ -1,0 +1,51 @@
+header {
+  background:black;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+}
+
+header ul li {
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 75px;
+}
+
+#banner {
+  height: 350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 10%;
+  /* margin-top: 3%; */
+  }
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+section img {
+  float: left;
+}
+
+section div {
+  width: calc(50% - 30px);
+  float: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+section div p {
+height: 320px;
+overflow: auto;
+font-size: 16px;
+line-height: 22px;
+font-style: italic;
+}
