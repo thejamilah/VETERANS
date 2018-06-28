@@ -36,22 +36,86 @@ function proccessForm(form){
 // add more cases as needed for the form (there will be a lot)
 switch(valueIn){
 
+case 'health':
+  document.getElementById('startForm').style.display='none';
+  document.getElementById('h-n-w').style.display='block';
+  break;
+
 case 'education':
   document.getElementById('startForm').style.display='none';
   document.getElementById('showEduForm').style.display='block';
   break;
 
-case 'h-n-w':
+case 'financial':
+  //code here
+  break;
+
+case 'community':
   document.getElementById('startForm').style.display='none';
-  document.getElementById('h-n-w').style.display='block';
   break;
 
 case 'employment':
   document.getElementById('startForm').style.display='none';
   break;
 
-case 'services':
-  document.getElementById('startForm').style.display='none';
+case 'healthCareBen':
+  //code here
+  break;
+
+case 'menHealth':
+  //coded here
+  break;
+
+case 'subsAbuse':
+  //code here
+  break;
+
+case 'montGi':
+  //code here
+  break;
+
+case 'post911':
+  //code here
+  break;
+
+case 'vocRehab':
+  //code here
+  break;
+
+case 'busLoan':
+  //code here
+  break;
+
+case 'homLoan':
+  //code here
+  break;
+
+case 'lglSer':
+  //code here
+  break;
+
+case 'vfw':
+  //code here
+  break;
+
+case 'al':
+  //code here
+  break;
+
+case 'wwp':
+  //code here
+  break;
+
+case 'veoa':
+  //code here
+  break;
+
+case 'vra':
+  //code here
+  break;
+
+case 'cha':
+  //code here
   break;
 }
 
