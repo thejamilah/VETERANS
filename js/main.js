@@ -26,11 +26,12 @@ var vfwSeattle = new ReadableStream('Veterans of Foreign Wars: Seattle', '612 Wa
 var valueIn = '';
 
 function queryStart(){
+  
   var radios = document.getElementsByClassName('first');
   for (var i = 0; i < radios.length; i++){
     if (radios[i].checked){
       console.log(radios[i].value);
-      valueIn = radios[i].checked.value;
+      valueIn = radios[i].value;
       return valueIn;
     }
   }
@@ -47,6 +48,7 @@ case 'health':
   break;
 
 case 'education':
+  console.log('reached switch');
   document.getElementById('startForm').style.display = 'none';
   document.getElementById('showEduForm').style.display = 'block';
   break;
@@ -124,7 +126,7 @@ case 'cha':
   break;
 }
 
-// functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
+// REFACTOR STRETCH: functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
 
 // function to reset form selection...we can either use this in main.html <input type="reset" value="Reset" or this below in javascript pool...
 /*document.getElementById("reset").onclick = function() {
@@ -132,4 +134,4 @@ case 'cha':
 };*/
 
 // event handler
-document.getElementById('next').addEventListener('click', queryStart());
+document.getElementById('startNext').addEventListener('submit', queryStart());
