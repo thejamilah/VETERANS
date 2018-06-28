@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Main </title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
 </head>
 <body>
@@ -24,8 +25,16 @@
                     </ul>
                 </nav>
             </header>
-        <Fieldset>
-            <form id="startForm">
+            <div class="force">
+            <img id="airforce" img src="img/airforce 300px.jpg">
+            <img id="army" img src="img/army 300px.jpg">
+            <img id="navy" img src="img/navy 300px.jpg">
+            <img id="coast" img src="img/coast 300.jpg">
+            <img id="marine" img src="img/marines 300px.jpg">
+            </div>
+            <div id="questions">
+                <Fieldset>
+                <form id="startForm">
                 <label for ="health">Health and Wellness</label>
                 <input type="radio" id="health", class="" name="health" value="health"><br>
                 <label for ="education">Education</label>
