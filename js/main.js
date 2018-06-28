@@ -51,7 +51,20 @@ document.getElementById('next').onclick = function getFormValue(event){
 
 
 // functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
+function resetForm() {
+  var f= document.getElementById('f');
+  f.reset();
+  f.elements.foo.value= Element_getClassValue(f.elements.foo, 'value');
+}
 
+function Element_getClassValue(el, classname) {
+  var prefix= classname+'=';
+  var classes= el.className.split(/\s+/);
+  for (var i= classes.length; i-->0;)
+      if (classes[i].substring(0, prefix.length)===prefix)
+          return classes[i].substring(prefix.length);
+  return '';
+}
 // function to reset form selection...we can either use this in main.html <input type="reset" value="Reset" or this below in javascript pool...
 document.getElementById("reset").onclick = function() {
   document.getElementById("number").value = "";
