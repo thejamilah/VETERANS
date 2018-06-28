@@ -10,16 +10,25 @@
 
 //function to handle the forms... should iterate through and find the checked box and return its value for use
 
-var radios = document.getEleme
-
-function proccessForm(form){
-	for (var i = 0; i < form.Selector.length; i++) {
-	if (form.Selector[i].checked){
-		break;
-		}
-	}
-	var valueIn = form.Selector.value;
+var radios = document.getElementsByClassName('first');
+var valueIn = null;
+function findSelection(){
+  for (var i = 0; length = radios.length; i < length, i++){
+    if (radios[i].checked){
+      valueIn = radios[i].value;
+      return valueIn;
+    }
+  }
 }
+
+/* function proccessForm(form){
+  for (var i = 0; i < form.Selector.length; i++) {
+    if (form.Selector[i].checked){
+      break;
+    }
+  }
+  var valueIn = form.Selector.value;
+} */
 
 // switch case build for values returned from form
 // 'valueIn' should come from event handler to decide what form was selected.
@@ -46,21 +55,21 @@ case 'services':
 }
 
 // event handler for when "Next" on html page is clicked. this should take the value of the forms and pass it to javascript as "valueIn"
-document.getElementById('next').onclick = function getFormValue(event){
+/*document.getElementById('next').onclick = function getFormValue(event){
   var valueIn = document.querySelector('input[name='Selector']:checked').value;
   return valueIn;
-}
+} */
 
 
 // functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
 
 // function to reset form selection...we can either use this in main.html <input type="reset" value="Reset" or this below in javascript pool...
-document.getElementById("reset").onclick = function() {
+/* document.getElementById("reset").onclick = function() {
   document.getElementById("number").value = "";
-};
+}; */
 
 // event handler
-var e = document.getElementById(next)
-e.addEventListener('next', proccessForm());
+var e = document.getElementById('next');
+e.addEventListener('next', findSelection());
 // // storeform.innerHTML = '';
 // storeForm.addEventListener('submit', form);
