@@ -9,6 +9,7 @@ header ul li {
   display: inline-block;
   margin-top: 40px;
   margin-right: 75px;
+  margin-left: 40px;
 }
 
 .force {
