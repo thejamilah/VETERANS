@@ -7,8 +7,8 @@
   this.id = id; // and ID to html i think we need
   this.class; // possibly the class if we need to pass it class info for css
 } */
-
-//function to handle the forms... should iterate through and find the checked box and return its value for use
+var e = document.getElementById(next)
+//function to handle the forms... should iterate through and find the checked box and return its value for usevar e = document.getElementById(next)
 
 function proccessForm(form){
 	for (var i = 0; i < form.Selector.length; i++) {
@@ -56,3 +56,9 @@ document.getElementById('next').onclick = function getFormValue(event){
 document.getElementById("reset").onclick = function() {
   document.getElementById("number").value = "";
 };
+
+// event handler
+var e = document.getElementById(next)
+e.addEventListener('next', proccessForm());
+// // storeform.innerHTML = '';
+// storeForm.addEventListener('submit', form);
