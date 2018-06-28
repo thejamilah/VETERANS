@@ -22,6 +22,16 @@ var vfwSeattle = new ReadableStream('Veterans of Foreign Wars: Seattle', '612 Wa
 
 //function to handle the forms... should iterate through and find the checked box and return its value for use
 
+// constructor function for what to pass to the changing form element. this will need work.
+/*function MakeForm(name, type, id){
+  this.name = name; // name of the button ex: "Education"
+  this.type = type; // type of form element: "radio", "checkbox", etc.
+  this.id = id; // and ID to html i think we need
+  this.class; // possibly the class if we need to pass it class info for css
+} */
+var e = document.getElementById(next)
+//function to handle the forms... should iterate through and find the checked box and return its value for usevar e = document.getElementById(next)
+
 function proccessForm(form){
 	for (var i = 0; i < form.Selector.length; i++) {
 	if (form.Selector[i].checked){

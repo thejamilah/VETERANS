@@ -28,6 +28,7 @@ main {
 
 section img {
   float: left;
+  border-radius: 50%;
 }
 
 section div {

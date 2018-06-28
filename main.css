@@ -1,4 +1,4 @@
-/* header {
+header {
   background:black;
   height: 100px;
   position: fixed;
@@ -9,5 +9,18 @@ header ul li {
   display: inline-block;
   margin-top: 40px;
   margin-right: 75px;
+  margin-left: 40px;
+}
+
+.force {
+  display: flex;
+  padding-top: 100px;
+  }
+
+/* .force img {
 } */
 
+#questions {
+  padding-top: 300px;
+  margin-left: 100px;
+}
