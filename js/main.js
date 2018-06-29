@@ -12,6 +12,7 @@ function ResourceData(name, location, hours, phone, email, link){
 }
 
 //example build out of one resource.... basically building our own database to draw from
+var str = this.name;
 // Health Care Benefits Resources
 var vaChoice = new ResourceData('Va Choice Act', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp"));
 var vaMission = new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp"));
