@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Main </title>
+    <title>Main Page</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
 </head>
 <body>
         <header>
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Nav Item 1</a>
+                            <a href="#HnW">Health and Wellness</a>
                         </li>
                         <li>
-                            <a href="#">Nav Item 2</a>
+                            <a href="#Edu">Education</a>
                         </li>
                         <li>
-                            <a href="#">Nav Item 3</a>
+                            <a href="#FnL">Financial and Legal Services</a>
                         </li>
                         <li>
-                            <a href="#">Nav Item 4</a>
+                            <a href="#CO">Community Organizations</a>
+                        </li>
+                        <li>
+                            <a href="#EnH">Employment and Homelessness</a>
                         </li>
                     </ul>
                 </nav>
             </header>
             <div class="force">
+<<<<<<< HEAD
             <img id="airforce" img src="img/airforce 300px.jpg">
             <img id="army" img src="img/army 300px.jpg">
             <img id="navy" img src="img/navy 300px.jpg">
             <img id="marine" img src="img/marines 300px.jpg">
             <img id="coast" img src="img/coast 300.jpg">
+=======
+            <img id="airforce" img src="img/airforce 300px.png">
+            <img id="army" img src="img/army 300px.png">
+            <img id="navy" img src="img/navy 300px.png">
+            <img id="coast" img src="img/coast 300.png">
+            <img id="marine" img src="img/marines 300px.png">
+>>>>>>> 082bbc0dc12887e58cdc0107e468726ce9211359
             </div>
             <div id="questions">
                 <Fieldset>
                 <form id="startForm">
                 <label for ="health">Health and Wellness</label>
-                <input type="radio" id="health", class="" name="health" value="health"><br>
+                <input type="radio" id="health", class="first" name="formStart" value="health"><br>
                 <label for ="education">Education</label>
-                <input type="radio", id="education", class="" name="education" value="education"><br>
+                <input type="radio", id="education", class="first" name="formStart" value="education"><br>
                 <label for ="financial">Financial and Legal Services</label>
-                <input type="radio", id="financial", class="" name="financial" value="financial"><br>
+                <input type="radio", id="financial", class="first" name="formStart" value="financial"><br>
                 <label for ="community">Community Organizations</label>
-                <input type="radio", id="community", class="" name="community" value="community"><br>
+                <input type="radio", id="community", class="first" name="formStart" value="community"><br>
                 <label for ="employment">Employment and Homelessness</label>
-                <input type="radio", id="employment", class="" name="employment" value="employment"><br>
+                <input type="radio", id="employment", class="first" name="formStart" value="employment"><br>
+                <button type="submit" id="startNext">NEXT</button>
             </form>
         </table>
         </Fieldset>
@@ -56,6 +67,7 @@
                 <input type="checkbox" id="menHealth", class"" name="menHealth" value="menHealth"><br>
                 <label for ="subsAbuse">Substance Abuse</label>
                 <input type="checkbox" id="subsAbuse", class"" name="subsAbuse" value="subsAbuse"><br>
+                <button type="submit" id="healthNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
@@ -66,6 +78,7 @@
                 <input type="checkbox" id="post911", class"" name="post911" value="post911"><br>
                 <label for ="vocRehab">VOC REHAB</label>
                 <input type="checkbox" id="vocRehab", class"" name="vocRehab" value="vocRehab"><br>
+                <button type="submit" id="eduNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
@@ -76,6 +89,7 @@
                 <input type="checkbox" id="homLoan", class"" name="homLoan" value="homLoan"><br>
                 <label for ="lglSer">Legal Services</label>
                 <input type="checkbox" id="lglSer", class"" name="lglSer" value="lglSer"><br>
+                <button type="submit" id="finNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
@@ -86,6 +100,7 @@
                 <input type="checkbox" id="al", class"" name="al" value="al"><br>
                 <label for ="wwp">Wounded Warrior Project</label>
                 <input type="checkbox" id="wwp", class"" name="wwp" value="wwp"><br>
+                <button type="submit" id="commNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
@@ -96,8 +111,15 @@
                 <input type="checkbox" id="vra", class"" name="vra" value="vra"><br>
                 <label for ="cha">Compass Housing Alliance</label>
                 <input type="checkbox" id="cha", class"" name="cha" value="cha"><br>
+                <button type="submit" id="employNext">NEXT</button>
             </form>
         </fieldset>
+<<<<<<< HEAD
         <button id="next">NEXT</button>
     </body>
+=======
+    </div>
+    <script src="js/main.js"></script>
+</body>
+>>>>>>> 082bbc0dc12887e58cdc0107e468726ce9211359
 </html>
