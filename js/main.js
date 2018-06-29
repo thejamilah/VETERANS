@@ -67,9 +67,9 @@ var build9 = new ResourceData('Building 9 for Veterans Transitional Housing Prog
 
 //function to handle the forms... should iterate through and find the checked box and return its value for usevar e = document.getElementById(next)
 
-var valueIn = '';
+var valueIn = null;
 
-function queryStart(event){
+/*function queryStart(event){
   event.preventDefault();
   var radios = document.getElementsByClassName('first');
   for (var i = 0; i < radios.length; i++){
@@ -79,96 +79,108 @@ function queryStart(event){
       return valueIn;
     }
   }
-}
+} */
 
 // switch case build for values returned from form
 // 'valueIn' should come from event handler to decide what form was selected.
 // add more cases as needed for the form (there will be a lot)
-switch(valueIn){
 
-case 'health':
-  document.getElementById('startForm').style.display = 'none';
-  document.getElementById('h-n-w').style.display = 'block';
-  break;
+function queryStart(event){
+  event.preventDefault();
+  var radios = document.getElementsByClassName('first');
+  for (var i = 0; i < radios.length; i++){
+    if (radios[i].checked){
+      console.log(radios[i].value);
 
-case 'education':
-  console.log('reached switch');
-  document.getElementById('startForm').style.display = 'none';
-  document.getElementById('showEduForm').style.display = 'block';
-  break;
+      switch(radios[i].value){
 
-case 'financial':
-  //code here
-  break;
+      case 'health':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('healthForm').style.display = 'block';
+        break;
 
-case 'community':
-  document.getElementById('startForm').style.display = 'none';
-  break;
+      case 'education':
+        console.log('reached switch');
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('edForm').style.display = 'block';
+        break;
 
-case 'employment':
-  document.getElementById('startForm').style.display = 'none';
-  break;
+      case 'financial':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('finForm').style.display = 'block';
+        break;
 
-case 'healthCareBen':
-  //code here
-  break;
+      case 'community':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('comOrgForm').style.display = 'block';
+        break;
 
-case 'menHealth':
-  //coded here
-  break;
+      case 'employment':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('employAndHome').style.display = 'block';
+        break;
 
-case 'subsAbuse':
-  //code here
-  break;
+      case 'healthCareBen':
+        //code here
+        break;
 
-case 'montGi':
-  //code here
-  break;
+      case 'menHealth':
+      //coded here
+        break;
 
-case 'post911':
-  //code here
-  break;
+      case 'subsAbuse':
+      //code here
+        break;
 
-case 'vocRehab':
-  //code here
-  break;
+      case 'montGi':
+      //code here
+        break;
 
-case 'busLoan':
-  //code here
-  break;
+      case 'post911':
+      //code here
+        break;
 
-case 'homLoan':
-  //code here
-  break;
+      case 'vocRehab':
+      //code here
+        break;
 
-case 'lglSer':
-  //code here
-  break;
+      case 'busLoan':
+      //code here
+        break;
 
-case 'vfw':
-  //code here
-  break;
+      case 'homLoan':
+      //code here
+        break;
 
-case 'al':
-  //code here
-  break;
+      case 'lglSer':
+      //code here
+        break;
 
-case 'wwp':
-  //code here
-  break;
+      case 'vfw':
+      //code here
+        break;
 
-case 'veoa':
-  //code here
-  break;
+      case 'al':
+      //code here
+        break;
 
-case 'vra':
-  //code here
-  break;
+      case 'wwp':
+      //code here
+        break;
 
-case 'cha':
-  //code here
-  break;
-}
+      case 'veoa':
+      //code here
+        break;
+
+      case 'vra':
+      //code here
+        break;
+
+      case 'cha':
+      //code here
+        break;
+      }
+    }}}
 
 // REFACTOR STRETCH: functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
 
