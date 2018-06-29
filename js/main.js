@@ -25,8 +25,8 @@ var vfwSeattle = new ReadableStream('Veterans of Foreign Wars: Seattle', '612 Wa
 
 var valueIn = '';
 
-function queryStart(){
-  
+function queryStart(event){
+  event.preventDefault();
   var radios = document.getElementsByClassName('first');
   for (var i = 0; i < radios.length; i++){
     if (radios[i].checked){
@@ -134,4 +134,5 @@ case 'cha':
 };*/
 
 // event handler
-document.getElementById('startNext').addEventListener('submit', queryStart());
+var submitStart = document.getElementById('startNext');
+submitStart.addEventListener('click', queryStart);
