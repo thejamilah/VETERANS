@@ -50,7 +50,7 @@ var salvaArmySeattle = new ResourceData('The Salvation Army William Booth Center
 var kingCoVetPro = new ResourceData('King County Veterans Program', '2106 2nd Ave, Suite 100, Seattle, WA 98121', '0830-1630 Walk-ins: Mon/Wed/Thurs 0830 - 1130 Tues 1300 - 1500', '(206) 477-8282', 'N/A', str.link('https://www.kingcounty.gov/depts/community-human-services/veterans.aspx'));
 var natCoaliHomVets = new ResourceData('National Coalition for Homeless Veterans', 'N/A', 'N/A', 'N/A', 'N/A', str.link('http://www.nchv.org/'));
 var homeVetStanDown = new ResourceData('Homeless Veteran Stand Downs', 'N/A', 'N/A', 'N/A', 'N/A', str.link('https://www.va.gov/homeless/events.asp'));
-var  vash = new ResourceData('VASH Program', 'N/A', 'N/A', 'N/A', 'N/A', str.link('https://portal.hud.gov/hudportal/HUD?src=/program_offices/public_indian_housing/programs/hcv/vash'));
+var vash = new ResourceData('VASH Program', 'N/A', 'N/A', 'N/A', 'N/A', str.link('https://portal.hud.gov/hudportal/HUD?src=/program_offices/public_indian_housing/programs/hcv/vash'));
 var vfwTranEmpSer = new ResourceData('VFW Transition and Employment Services', 'N/A', 'N/A', 'N/A', 'N/A', str.link('https://www.vfw.org/assistance/employment-assistance'));
 var build9 = new ResourceData('Building 9 for Veterans Transitional Housing Program - Retsil, WA', 'WA Veterans Home 1141 Beach Drive E, Building 9, Port Orchard, WA 98366', 'Mon - Fri 8:30 - 4:30','(360) 895-4371', 'N/A', str.link('http://www.dva.wa.gov/veteran-homes/building-9-veterans-transitional-housing-program'));
 
