@@ -14,7 +14,7 @@ function ResourceData(name, location, hours, phone, email, link){
 //example build out of one resource.... basically building our own database to draw from
 var str = this.name;
 // Health Care Benefits Resources
-var vaChoice = new ResourceData('Va Choice Act', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp"));
+var vaChoice = new ResourceData('Va Choice Act', '810 Vermont Avenue, NW Washington DC, ', 'N/A', '866-606-8198', 'N/A', str.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp"));
 var vaMission = new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp"));
 var wasSolHomeOrt = new ResourceData('Washington Soldiers Home Orting Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', 'N/A', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');
 var NatVetFound = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://nvf.org"));
