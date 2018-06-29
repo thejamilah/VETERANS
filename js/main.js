@@ -14,10 +14,10 @@ function ResourceData(name, location, hours, phone, email, link){
 //example build out of one resource.... basically building our own database to draw from
 var str = this.name;
 // Health Care Benefits Resources
-var vaChoice = new ResourceData('Va Choice Act', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp"));
-var vaMission = new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp"));
+var vaChoice = new ResourceData('Va Choice Act', ' Mail Only: 810 Vermont Avenue, NW Washington DC 20420', '7am-8pm M-F Pacific Time', '866-606-8198', 'N/A', str.link('https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp'));
+var vaMission = new ResourceData('VA Mission Act of 2018', 'Mail Only: 810 Vermont Avenue, NW Washington DC 20420', '7am-8pm M-F Pacific Time', '866-606-8198', 'N/A', str.link('https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp'));
 var wasSolHomeOrt = new ResourceData('Washington Soldiers Home Orting Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', 'N/A', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');
-var NatVetFound = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://nvf.org"));
+var NatVetFound = new ResourceData('National Veterans Foundation', '5777 West Century Boulevard, Suite 350, Los Angeles, CA 90045', 'N/A', 'N/A', 'N/A', str.link('https://nvf.org'));
 // Mental Health Resources
 var vfwMenWell = new ResourceData('VFW Mental Wellness Campaign', 'N/A', 'N/A', 'N/A', 'N/A', str.link("https://www.vfw.org/assistance/mental-wellness"));
 var vetCrisis = new ResourceData('Veterans Crisis Line', 'N/A', '24 Hours', '1-800-273-8255 (PRESS 1)', 'N/A', str.link("https://www.veteranscrisisline.net/?gclid=CjwKCAjw68zZBRAnEiwACw0eYc-Yat9KXcr8YN-JCKYbKBsa5stJgmF_-4QTS9ctcnMUMkG_hkVzNRoCqzYQAvD_BwE"));
