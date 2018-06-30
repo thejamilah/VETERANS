@@ -1,7 +1,6 @@
 'use strict';
 
 //constructor function that holds data for different resources presented.
-var headline = ['Name' , 'Location' , 'Hours' , 'Phone' , 'E-Mail' , 'Website'];
 function ResourceData(name, location, hours, phone, email, link){
   this.name = name;
   this.location = location;
@@ -65,12 +64,7 @@ var url = linkStr.link("https://nvf.org");
 document.getElementById("link").innerHTML = url;
 
 // Mental Health Resources
-<<<<<<< HEAD
-var vfwMenWell = new ResourceData('VFW Mental Wellness Campaign', '13109 E Mirabeau Parkway, Spokane, WA 99216', '8am-4:30pm M-F (24/7 general redirect)', '509-444-8387', 'cheriknoxcrafts@gmail.com', str.link('https://www.vfw.org/assistance/mental-wellness'));
-var vetCrisis = new ResourceData('Veterans Crisis Line', 'N/A', '24 Hours', '1-800-273-8255 (PRESS 1)', 'text - 838255', str.link('https://www.veteranscrisisline.net/?gclid=CjwKCAjw68zZBRAnEiwACw0eYc-Yat9KXcr8YN-JCKYbKBsa5stJgmF_-4QTS9ctcnMUMkG_hkVzNRoCqzYQAvD_BwE'));
-var callCenHomelessVets = new ResourceData('National Call Center for Homeless Vets', 'N/A', '24 Hours', '1-877-424-3838', 'N/A', str.link('https://www.va.gov/homeless/nationalcallcenter.asp'));
 
-=======
 var vfwMenWell = new ResourceData('VFW Mental Wellness Campaign', '13109 E Mirabeau Parkway, Spokane, WA 99216', '8am-4:30pm M-F (24/7 general redirect)', '509-444-8387', 'cheriknoxcrafts@gmail.com', 'VFW Mental Wellness Campaign');
 var vetCrisis = new ResourceData('Veterans Crisis Line', 'N/A', '24 Hours', '1-800-273-8255 (PRESS 1)', 'text - 838255', 'Veterans Crisis Line');
 var callCenHomelessVets = new ResourceData('National Call Center for Homeless Vets', 'N/A', '24 Hours', '1-877-424-3838', 'N/A', 'National Call Center for Homeless Vets');
@@ -103,7 +97,7 @@ emailEl.textContent = 'Email : ' + callCenHomelessVets.email;
 var linkStr = callCenHomelessVets.link;
 var url = linkStr.link('https://www.va.gov/homeless/nationalcallcenter.asp');
 document.getElementById("link").innerHTML = url;
->>>>>>> f58764b3475df316e7539c17585205797acfb945
+
 //  Substance Abuse Resources
 var vaSubAbusePro = new ResourceData('VA Substance Abuse Programs', '9600 Veterans Dr., Lakewood, WA 98493 / 1660 S. Columbian Way, Seattle, WA 98108', '24 Hours', '1-800-273-8255', 'N/A', 'VA Substance Abuse Programs');
 var makeConnection = new ResourceData('maketheconnection.net', 'N/A', '24 Hours', 'N/A', 'N/A', str.link('https://maketheconnection.net/'));
@@ -134,6 +128,12 @@ var millionairesClub = new ResourceData('The Millionaires Club - Seattle', '2515
 var vaHomelessOutreach = new ResourceData('VA Homeless Outreach Clinic - Seattle, WA', 'N/A', 'N/A', '(425)-203-7200', 'N/A', str.link('https://www.pugetsound.va.gov/services/homeless/index.asp'));
 var compHouAllia = new ResourceData('Compass Housing Alliance - Seattle, WA', '77 S Washington ST, Seattle WA', '8:30am - 5pm', '(206)474-1910', 'N/A', str.link('http://www.compasshousingalliance.org/'));
 
+//code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
+
+var vaChoice = new ResourceData ('Va Choice Act', '810 Vermont Avenue, NW Washington DC, ', 'N/A', '866-606-8198', 'N/A', 'VA CHOICE ACT');
+var vaMission =  new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', 'https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp');
+var waSoldier = new ResourceData('Washington Soldiers Home Orting Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', 'N/A', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');
+var naNational = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', 'https://nvf.org');
 
 //function to handle the forms... should iterate through and find the checked box and return its value for usevar e = document.getElementById(next)
 
@@ -306,5 +306,5 @@ document.getElementById("link").innerHTML = url;
 // // REFACTOR STRETCH: functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
 
 // event handler
-var submitStart = document.getElementById('startNext');
+var submitStart = document.getElementsByClassName('next');
 submitStart.addEventListener('click', queryStart);
