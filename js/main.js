@@ -19,11 +19,40 @@ var vaMission = new ResourceData('VA Mission Act of 2018', 'Mail Only: 810 Vermo
 var wasSolHomeOrt = new ResourceData('Washington Soldiers Home Ortiam:30-ng Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', '8am-4:30pm M-F', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');-
 var NatVetFound = new ResourceData('National Veterans Foundation', '5777 West Century Boulevard, Suite 350, Los Angeles, CA 90045', '9am-5pm M-F Pacific Time', '888-777-4443', 'rich@nvf.org', str.link('https://nvf.org'));
 // Mental Health Resources
-var vfwMenWell = new ResourceData('VFW Mental Wellness Campaign', '13109 E Mirabeau Parkway, Spokane, WA 99216', '8am-4:30pm M-F (24/7 general redirect)', '509-444-8387', 'cheriknoxcrafts@gmail.com', str.link('https://www.vfw.org/assistance/mental-wellness'));
-var vetCrisis = new ResourceData('Veterans Crisis Line', 'N/A', '24 Hours', '1-800-273-8255 (PRESS 1)', 'text - 838255', str.link('https://www.veteranscrisisline.net/?gclid=CjwKCAjw68zZBRAnEiwACw0eYc-Yat9KXcr8YN-JCKYbKBsa5stJgmF_-4QTS9ctcnMUMkG_hkVzNRoCqzYQAvD_BwE'));
-var callCenHomelessVets = new ResourceData('National Call Center for Homeless Vets', 'N/A', '24 Hours', '1-877-424-3838', 'N/A', str.link('https://www.va.gov/homeless/nationalcallcenter.asp'));
+var vfwMenWell = new ResourceData('VFW Mental Wellness Campaign', '13109 E Mirabeau Parkway, Spokane, WA 99216', '8am-4:30pm M-F (24/7 general redirect)', '509-444-8387', 'cheriknoxcrafts@gmail.com', 'VFW Mental Wellness Campaign');
+var vetCrisis = new ResourceData('Veterans Crisis Line', 'N/A', '24 Hours', '1-800-273-8255 (PRESS 1)', 'text - 838255', 'Veterans Crisis Line');
+var callCenHomelessVets = new ResourceData('National Call Center for Homeless Vets', 'N/A', '24 Hours', '1-877-424-3838', 'N/A', 'National Call Center for Homeless Vets');
+
+// vetCrisis
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vetCrisis.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vetCrisis.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vetCrisis.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vetCrisis.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vetCrisis.email;
+var linkStr = vetCrisis.link;
+var url = linkStr.link('https://www.veteranscrisisline.net/?gclid=CjwKCAjw68zZBRAnEiwACw0eYc-Yat9KXcr8YN-JCKYbKBsa5stJgmF_-4QTS9ctcnMUMkG_hkVzNRoCqzYQAvD_BwE');
+document.getElementById("link").innerHTML = url;
+// callCenHomelessVets
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + callCenHomelessVets.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + callCenHomelessVets.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + callCenHomelessVets.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + callCenHomelessVets.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + callCenHomelessVets.email;
+var linkStr = callCenHomelessVets.link;
+var url = linkStr.link('https://www.va.gov/homeless/nationalcallcenter.asp');
+document.getElementById("link").innerHTML = url;
 //  Substance Abuse Resources
-var vaSubAbusePro = new ResourceData('VA Substance Abuse Programs', '9600 Veterans Dr., Lakewood, WA 98493 / 1660 S. Columbian Way, Seattle, WA 98108', '24 Hours', '1-800-273-8255', 'N/A', str.link('https://www.va.gov/directory/guide/FindSUDprogram.cfm?program=0&inputaddress=University%20Place,%20WA%2098467,%20USA&statusok=1&latitude=47.204644&longitude=-122.538047&SEARCH_CRITERIA=1&country=us'));
+var vaSubAbusePro = new ResourceData('VA Substance Abuse Programs', '9600 Veterans Dr., Lakewood, WA 98493 / 1660 S. Columbian Way, Seattle, WA 98108', '24 Hours', '1-800-273-8255', 'N/A', 'VA Substance Abuse Programs');
 var makeConnection = new ResourceData('maketheconnection.net', 'N/A', '24 Hours', 'N/A', 'N/A', str.link('https://maketheconnection.net/'));
 var alanon = new ResourceData('Al-Anon.org', '1600 Corporate Landing Parkway, Virginia Beach, VA 23454', '8am-6pm Eastern Standard Time', '(888) 425-2666', 'wso@al-anon.org', str.link('https://al-anon.org'));
 // Education Resources
@@ -125,11 +154,36 @@ function queryStart(event){
         break;
 
       case 'menHealth':
-      //coded here
+      // VFWMenWell
+        var nameEl = document.getElementById('name');
+        nameEl.textContent = 'Name: ' + vfwMenWell.name;
+        var locEl = document.getElementById('location');
+        locEl.textContent = 'Location : ' + vfwMenWell.location;
+        var hourEl = document.getElementById('hours');
+        hourEl.textContent = 'Hours : ' + vfwMenWell.hours;
+        var phEl = document.getElementById('phone');
+        phEl.textContent = 'Phone : ' + vfwMenWell.phone;
+        var emailEl = document.getElementById('email');
+        emailEl.textContent = 'Email : ' + vfwMenWell.email;
+        var linkStr = vfwMenWell.link;
+        var url = linkStr.link('https://www.va.gov/directory/guide/FindSUDprogram.cfm?program=0&inputaddress=University%20Place,%20WA%2098467,%20USA&statusok=1&latitude=47.204644&longitude=-122.538047&SEARCH_CRITERIA=1&country=us');
+        document.getElementById("link").innerHTML = url;
         break;
 
       case 'subsAbuse':
-      //code here
+        var nameEl = document.getElementById('name');
+        nameEl.textContent = 'Name: ' + vaSubAbusePro.name;
+        var locEl = document.getElementById('location');
+        locEl.textContent = 'Location : ' + vaSubAbusePro.location;
+        var hourEl = document.getElementById('hours');
+        hourEl.textContent = 'Hours : ' + vaSubAbusePro.hours;
+        var phEl = document.getElementById('phone');
+        phEl.textContent = 'Phone : ' + vaSubAbusePro.phone;
+        var emailEl = document.getElementById('email');
+        emailEl.textContent = 'Email : ' + vaSubAbusePro.email;
+        var linkStr = vaSubAbusePro.link;
+        var url = linkStr.link('https://www.va.gov/directory/guide/SUD.asp');
+        document.getElementById("link").innerHTML = url;
         break;
 
       case 'montGi':
