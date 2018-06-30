@@ -271,39 +271,148 @@ document.getElementById("link").innerHTML = url;
         break;
 
       case 'busLoan':
-      //code here
+              var nameEl = document.getElementById('name');
+        nameEl.textContent = 'Name: ' + smBusLoans.name;
+        var locEl = document.getElementById('location');
+        locEl.textContent = 'Location : ' + smBusLoans.location;
+        var hourEl = document.getElementById('hours');
+        hourEl.textContent = 'Hours : ' + smBusLoans.hours;
+        var phEl = document.getElementById('phone');
+        phEl.textContent = 'Phone : ' + smBusLoans.phone;
+        var emailEl = document.getElementById('email');
+        emailEl.textContent = 'Email : ' + smBusLoans.email;
+        var linkStr = smBusLoans.link;
+        var url = linkStr.link('https://www.va.gov/osdbu/');
+        document.getElementById("link").innerHTML = url;
         break;
 
       case 'homLoan':
-      //code here
+      var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + vaHomeLoan.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + vaHomeLoan.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + vaHomeLoan.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + vaHomeLoan.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + vaHomeLoan.email;
+          var linkStr = vaHomeLoan.link;
+          var url = linkStr.link("https://www.benefits.va.gov/homeloans/");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'lglSer':
-      //code here
+      var nameEl = document.getElementById('name');
+                nameEl.textContent = 'Name: ' + vfwLglAss.name;
+                var locEl = document.getElementById('location');
+                locEl.textContent = 'Location : ' + vfwSeattle.location;
+                var hourEl = document.getElementById('hours');
+                hourEl.textContent = 'Hours : ' + vfwLglAss.hours;
+                var phEl = document.getElementById('phone');
+                phEl.textContent = 'Phone : ' + vfwLglAss.phone;
+                var emailEl = document.getElementById('email');
+                emailEl.textContent = 'Email : ' + vfwLglAss.email;
+                var linkStr = vfwLglAss.link;
+                var url = linkStr.link("https://www.va.gov/ogc/legalservices.asp and http://statesidelegal.org/findinghelp");
+                document.getElementById("link").innerHTML = url;
         break;
 
       case 'vfw':
-      //code here
+                var nameEl = document.getElementById('name');
+                nameEl.textContent = 'Name: ' + vfwSeattle.name;
+                var locEl = document.getElementById('location');
+                locEl.textContent = 'Location : ' + vfwSeattle.location;
+                var hourEl = document.getElementById('hours');
+                hourEl.textContent = 'Hours : ' + vfwSeattle.hours;
+                var phEl = document.getElementById('phone');
+                phEl.textContent = 'Phone : ' + vfwSeattle.phone;
+                var emailEl = document.getElementById('email');
+                emailEl.textContent = 'Email : ' + vfwSeattle.email;
+                var linkStr = vfwSeattle.link;
+                var url = linkStr.link("www.vfwseattle.org/");
+                document.getElementById("link").innerHTML = url;
         break;
 
       case 'al':
-      //code here
+      var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + alSeattle.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + alSeattle.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + alSeattle.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + alSeattle.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + alSeattle.email;
+          var linkStr = alSeattle.link;
+          var url = linkStr.link("https://www.legion.org/ and http://www.post206.org/");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'wwp':
-      //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + wwproject.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + wwproject.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + wwproject.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + wwproject.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + wwproject.email;
+          var linkStr = wwproject.link;
+          var url = linkStr.link("https://www.woundedwarriorproject.org/");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'veoa':
-      //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + veoact.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + veoact.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + veoact.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + veoact.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + veoact.email;
+          var linkStr = veoact.link;
+          var url = linkStr.link("https://www.benefits.va.gov/WARMS/docs/admin28/M28R/Part_VI/pt06_ch08_secA.pdf");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'vra':
-      //code here
+
+                var nameEl = document.getElementById('name');
+                nameEl.textContent = 'Name: ' + vrappointment.name;
+                var locEl = document.getElementById('location');
+                locEl.textContent = 'Location : ' + vrappointment.location;
+                var hourEl = document.getElementById('hours');
+                hourEl.textContent = 'Hours : ' + vrappointment.hours;
+                var phEl = document.getElementById('phone');
+                phEl.textContent = 'Phone : ' + vrappointment.phone;
+                var emailEl = document.getElementById('email');
+                emailEl.textContent = 'Email : ' + vrappointment.email;
+                var linkStr = vrappointment.link;
+                var url = linkStr.link("https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/veterans/vra/");
+                document.getElementById("link").innerHTML = url;
         break;
 
       case 'cha':
-      //code here
+      var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + compHouAllia.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + compHouAllia.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + compHouAllia.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + compHouAllia.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + compHouAllia.email;
+          var linkStr = compHouAllia.link;
+          var url = linkStr.link("http://www.compasshousingalliance.org/");
+          document.getElementById("link").innerHTML = url;
         break;
       }
     }}}
