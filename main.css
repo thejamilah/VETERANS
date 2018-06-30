@@ -1,6 +1,6 @@
 header {
   background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+  background: -webkit-gradient(radial, center center, 30px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
   background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
   background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
   background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
@@ -14,9 +14,11 @@ header {
 header ul li {
   display: inline-block;
   margin-top: 40px;
-  margin-right: 75px;
+  margin-right: 60px;
   margin-left: 40px;
-}
+  font-weight: bold;
+  }
+
 
 #force {
   margin-left: 20px;
@@ -98,7 +100,8 @@ input[type="checkbox"]+label, input[type="radio"]+label{
   background-color: #DDD;
   padding: 0;
   margin: 0;
-}
+  margin-top: 5em;
+  }
 
 .next {
   display: block;
