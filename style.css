@@ -23,7 +23,8 @@ display: block;
 	font-size: 20px;
 	color: black;
 	opacity: none;
-	margin-left: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #carl {
 	width: 145px;
