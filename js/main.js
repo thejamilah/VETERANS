@@ -1,7 +1,7 @@
 'use strict';
 
 //constructor function that holds data for different resources presented.
-
+var headline = ['Name' , 'Location' , 'Hours' , 'Phone' , 'E-Mail' , 'Website'];
 function ResourceData(name, location, hours, phone, email, link){
   this.name = name;
   this.location = location;
@@ -12,8 +12,8 @@ function ResourceData(name, location, hours, phone, email, link){
 }
 
 //example build out of one resource.... basically building our own database to draw from
-var str = this.name;
 // Health Care Benefits Resources
+
 var vaChoice = new ResourceData('Va Choice Act', ' Mail Only: 810 Vermont Avenue, NW Washington DC 20420', '7am-8pm M-F Pacific Time', '866-606-8198', 'N/A', str.link('https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp'));
 var vaMission = new ResourceData('VA Mission Act of 2018', 'Mail Only: 810 Vermont Avenue, NW Washington DC 20420', '7am-8pm M-F Pacific Time', '866-606-8198', 'N/A', str.link('https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp'));
 var wasSolHomeOrt = new ResourceData('Washington Soldiers Home Ortiam:30-ng Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', '8am-4:30pm M-F', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');-
@@ -48,122 +48,142 @@ var vaHomelessOutreach = new ResourceData('VA Homeless Outreach Clinic - Seattle
 var compHouAllia = new ResourceData('Compass Housing Alliance - Seattle, WA', '77 S Washington ST, Seattle WA', '8:30am - 5pm', '(206)474-1910', 'N/A', str.link('http://www.compasshousingalliance.org/'));
 //code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
 
+var vaChoice = new ResourceData ('Va Choice Act', '810 Vermont Avenue, NW Washington DC, ', 'N/A', '866-606-8198', 'N/A', 'VA CHOICE ACT');
+var vaMission =  new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', 'https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp');
+var waSoldier = new ResourceData('Washington Soldiers Home Orting Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', 'N/A', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');
+var naNational = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', 'https://nvf.org');
 
-// we will need dom manip to present ResourceData / object data to a table / page or something
-// based on form input..... could be a function we build for it.
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vaChoice.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vaChoice.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vaChoice.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vaChoice.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vaChoice.email;
+var linkStr = vaChoice.link;
+var url = linkStr.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp");
+document.getElementById("link").innerHTML = url;
 
 
-//function to handle the forms... should iterate through and find the checked box and return its value for usevar e = document.getElementById(next)
 
-var valueIn = '';
 
-function queryStart(){
-  
+// code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
+
+
+// // we will need dom manip to present ResourceData / object data to a table / page or something
+// // based on form input..... could be a function we build for it.
+
+
+// //function to handle the forms... should iterate through and find the checked box and return its value for usevar e = document.getElementById(next)
+
+var valueIn = null;
+
+// // switch case build for values returned from form
+// // 'valueIn' should come from event handler to decide what form was selected.
+// // add more cases as needed for the form (there will be a lot)
+
+function queryStart(event){
+  event.preventDefault();
   var radios = document.getElementsByClassName('first');
   for (var i = 0; i < radios.length; i++){
     if (radios[i].checked){
       console.log(radios[i].value);
-      valueIn = radios[i].value;
-      return valueIn;
-    }
-  }
-}
 
-// switch case build for values returned from form
-// 'valueIn' should come from event handler to decide what form was selected.
-// add more cases as needed for the form (there will be a lot)
-switch(valueIn){
+      switch(radios[i].value){
 
-case 'health':
-  document.getElementById('startForm').style.display = 'none';
-  document.getElementById('h-n-w').style.display = 'block';
-  break;
+      case 'health':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('healthForm').style.display = 'block';
+        break;
 
-case 'education':
-  console.log('reached switch');
-  document.getElementById('startForm').style.display = 'none';
-  document.getElementById('showEduForm').style.display = 'block';
-  break;
+      case 'education':
+        console.log('reached switch');
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('edForm').style.display = 'block';
+        break;
 
-case 'financial':
-  //code here
-  break;
+      case 'financial':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('finForm').style.display = 'block';
+        break;
 
-case 'community':
-  document.getElementById('startForm').style.display = 'none';
-  break;
+      case 'community':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('comOrgForm').style.display = 'block';
+        break;
 
-case 'employment':
-  document.getElementById('startForm').style.display = 'none';
-  break;
+      case 'employment':
+        document.getElementById('startForm').style.display = 'none';
+        document.getElementById('employAndHome').style.display = 'block';
+        break;
 
-case 'healthCareBen':
-  //code here
-  break;
+      case 'healthCareBen':
+        //code here
+        break;
 
-case 'menHealth':
-  //coded here
-  break;
+      case 'menHealth':
+      //coded here
+        break;
 
-case 'subsAbuse':
-  //code here
-  break;
+      case 'subsAbuse':
+      //code here
+        break;
 
-case 'montGi':
-  //code here
-  break;
+      case 'montGi':
+      //code here
+        break;
 
-case 'post911':
-  //code here
-  break;
+      case 'post911':
+      //code here
+        break;
 
-case 'vocRehab':
-  //code here
-  break;
+      case 'vocRehab':
+      //code here
+        break;
 
-case 'busLoan':
-  //code here
-  break;
+      case 'busLoan':
+      //code here
+        break;
 
-case 'homLoan':
-  //code here
-  break;
+      case 'homLoan':
+      //code here
+        break;
 
-case 'lglSer':
-  //code here
-  break;
+      case 'lglSer':
+      //code here
+        break;
 
-case 'vfw':
-  //code here
-  break;
+      case 'vfw':
+      //code here
+        break;
 
-case 'al':
-  //code here
-  break;
+      case 'al':
+      //code here
+        break;
 
-case 'wwp':
-  //code here
-  break;
+      case 'wwp':
+      //code here
+        break;
 
-case 'veoa':
-  //code here
-  break;
+      case 'veoa':
+      //code here
+        break;
 
-case 'vra':
-  //code here
-  break;
+      case 'vra':
+      //code here
+        break;
 
-case 'cha':
-  //code here
-  break;
-}
+      case 'cha':
+      //code here
+        break;
+      }
+    }}}
 
-// REFACTOR STRETCH: functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
-
-// function to reset form selection...we can either use this in main.html <input type="reset" value="Reset" or this below in javascript pool...
-/*document.getElementById("reset").onclick = function() {
-  document.getElementById("number").value = "";
-};*/
+// // REFACTOR STRETCH: functions to hide form.... i think functions will be ran in the switch case to hide previous form elements. might need one for showing and hiding each individual form group.
 
 // event handler
-document.getElementById('startNext').addEventListener('submit', queryStart());
+var submitStart = document.getElementById('startNext');
+submitStart.addEventListener('click', queryStart);

@@ -1,5 +1,11 @@
 header {
-  background:black;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+  background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+  background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* ie6-9 */;
   height: 100px;
   position: fixed;
   width: 100%;
@@ -12,15 +18,74 @@ header ul li {
   margin-left: 40px;
 }
 
+#force {
+  margin-left: 20px;
+}
+
 .force {
   display: flex;
-  padding-top: 100px;
+  padding-top: 150px;
   }
 
-/* .force img {
-} */
+.force img {
+  margin-right: -50px;
+}
 
 #questions {
   padding-top: 300px;
   margin-left: 100px;
+}
+
+#healthForm {
+  display: none;
+}
+
+#edForm {
+  display: none;
+}
+
+#finForm {
+  display: none;
+}
+
+#comOrgForm {
+  display: none;
+}
+
+#employAndHome {
+  display: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  position: absolute;
+  z-index: -1000;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+}
+
+input[type="checkbox"]+label, input[type="radio"]+label {
+  padding: 0.7em 1em;
+  background-color: #FFF;
+  color: #30a2cc;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label, input[type="radio"]:checked+label {
+  background-color: #30a2cc;
+  color: #FFF;
+}
+
+input[type="checkbox"]+label {
+  display: inline-block;
+  margin: 0.4em;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  text-transform: uppercase;
+  user-select: none;
 }
