@@ -31,81 +31,95 @@
             <img id="airforce" img src="img/airforce 300px.png">
             <img id="army" img src="img/army 300px.png">
             <img id="navy" img src="img/navy 300px.png">
-            <img id="coast" img src="img/coast 300.png">
             <img id="marine" img src="img/marines 300px.png">
+            <img id="coast" img src="img/coast 300.png">
             </div>
             <div id="questions">
                 <Fieldset>
                 <form id="startForm">
+                <input type="radio" id="health", class="first" name="formStart" value="health">
                 <label for ="health">Health and Wellness</label>
-                <input type="radio" id="health", class="first" name="formStart" value="health"><br>
+                <input type="radio", id="education", class="first" name="formStart" value="education">
                 <label for ="education">Education</label>
-                <input type="radio", id="education", class="first" name="formStart" value="education"><br>
+                <input type="radio", id="financial", class="first" name="formStart" value="financial">
                 <label for ="financial">Financial and Legal Services</label>
-                <input type="radio", id="financial", class="first" name="formStart" value="financial"><br>
+                <input type="radio", id="community", class="first" name="formStart" value="community">
                 <label for ="community">Community Organizations</label>
-                <input type="radio", id="community", class="first" name="formStart" value="community"><br>
+                <input type="radio", id="employment", class="first" name="formStart" value="employment">
                 <label for ="employment">Employment and Homelessness</label>
-                <input type="radio", id="employment", class="first" name="formStart" value="employment"><br>
                 <button type="submit" id="startNext">NEXT</button>
             </form>
         </table>
         </Fieldset>
         <fieldset>
             <form id="healthForm">
+                <input type="checkbox" id="healthCareBen", class"first" name="healthCareBen" value="healthCareBen">
                 <label for ="healthCareBen">Health Care Benefits</label>
-                <input type="checkbox" id="healthCareBen", class"first" name="healthCareBen" value="healthCareBen"><br>
+                <input type="checkbox" id="menHealth", class"first" name="menHealth" value="menHealth">
                 <label for ="menHealth">Mental Health</label>
-                <input type="checkbox" id="menHealth", class"first" name="menHealth" value="menHealth"><br>
+                <input type="checkbox" id="subsAbuse", class"first" name="subsAbuse" value="subsAbuse">
                 <label for ="subsAbuse">Substance Abuse</label>
-                <input type="checkbox" id="subsAbuse", class"first" name="subsAbuse" value="subsAbuse"><br>
                 <button type="submit" id="healthNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
             <form id="edForm">
+                <input type="checkbox" id="montGi", class"first" name="montGi" value="montGi">
                 <label for ="montGi">Montgomery GI Bill</label>
-                <input type="checkbox" id="montGi", class"first" name="montGi" value="montGi"><br>
+                <input type="checkbox" id="post911", class"first" name="post911" value="post911">
                 <label for ="post911">Post 911 GI Bill</label>
-                <input type="checkbox" id="post911", class"first" name="post911" value="post911"><br>
+                <input type="checkbox" id="vocRehab", class"first" name="vocRehab" value="vocRehab">
                 <label for ="vocRehab">VOC REHAB</label>
-                <input type="checkbox" id="vocRehab", class"first" name="vocRehab" value="vocRehab"><br>
                 <button type="submit" id="eduNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
             <form id="finForm">
+                <input type="checkbox" id="busLoan", class"first" name="busLoan" value="busLoan">
                 <label for ="busLoan">Business Loans</label>
-                <input type="checkbox" id="busLoan", class"first" name="busLoan" value="busLoan"><br>
+                <input type="checkbox" id="homLoan", class"first" name="homLoan" value="homLoan">
                 <label for ="homLoan">VA Home Loans</label>
-                <input type="checkbox" id="homLoan", class"first" name="homLoan" value="homLoan"><br>
+                <input type="checkbox" id="lglSer", class"first" name="lglSer" value="lglSer">
                 <label for ="lglSer">Legal Services</label>
-                <input type="checkbox" id="lglSer", class"first" name="lglSer" value="lglSer"><br>
                 <button type="submit" id="finNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
             <form id="comOrgForm">
+                <input type="checkbox" id="vfw", class"first" name="vfw" value="vfw">
                 <label for ="vfw">Veterans of Foreign Wars</label>
-                <input type="checkbox" id="vfw", class"first" name="vfw" value="vfw"><br>
+                <input type="checkbox" id="al", class"first" name="al" value="al">
                 <label for ="al">American Legion</label>
-                <input type="checkbox" id="al", class"first" name="al" value="al"><br>
+                <input type="checkbox" id="wwp", class"first" name="wwp" value="wwp">
                 <label for ="wwp">Wounded Warrior Project</label>
-                <input type="checkbox" id="wwp", class"first" name="wwp" value="wwp"><br>
                 <button type="submit" id="commNext">NEXT</button>
             </form>
         </fieldset>
         <fieldset>
             <form id="employAndHome">
+                <input type="checkbox" id="veoa", class"first" name="veoa" value="veoa">
                 <label for ="veoa">Vetrans' Employment Opportunities Act</label>
-                <input type="checkbox" id="veoa", class"first" name="veoa" value="veoa"><br>
+                <input type="checkbox" id="vra", class"first" name="vra" value="vra">
                 <label for ="vra">Vetrans' Recruitment Appointment</label>
-                <input type="checkbox" id="vra", class"first" name="vra" value="vra"><br>
+                <input type="checkbox" id="cha", class"first" name="cha" value="cha">
                 <label for ="cha">Compass Housing Alliance</label>
-                <input type="checkbox" id="cha", class"first" name="cha" value="cha"><br>
                 <button type="submit" id="employNext">NEXT</button>
             </form>
         </fieldset>
+        <table id="hcare"></table>
+        <div id="render"> 
+                <ul id="info">
+                    <li id = "name"></li>
+                    <li id = "location"></li>
+                    <li id = "hours"></li>
+                    <li id = "phone"></li>
+                    <li id = "email"></li>
+                    <li id = "link"></li>
+                </ul>
+    </div>
+    
+        <button id="next">NEXT</button>
+    </body>
     </div>
     <script src="js/main.js"></script>
 </body>
