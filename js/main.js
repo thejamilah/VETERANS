@@ -1,3 +1,4 @@
+
 'use strict';
 
 //constructor function that holds data for different resources presented.
@@ -60,6 +61,7 @@ var mgib = new ResourceData('Montgomery GI Bill', 'N/A', '8-8pm', '1-888-442-455
 var nineEleven = new ResourceData('9/11 GI Bill', 'N/A', '8AM-5PM PST', '1-888-442-4551', 'va.gov.email@email.com');
 var vocrehab = new ResourceData('VOC Rehab', 'Jackson Federal Building, 915 2nd Ave, Seattle, WA 98174', '8am-4pm M-F', '800-827-1000', 'N/A', str.link('https://www.benefits.va.gov/vocrehab/edu_voc_counseling.asp'));
 // Financial and Legal Resources
+
 var smBusLoans = new ResourceData('VA Small and Veteran Business Programs', '810 Vermone Avenue, NW Washington, DC 20420 Mail Only', '8am-6pm Eastern Standard Time', '866-584-2344', 'osdbu@va.gov', 'VA Small and Veteran Business Programs');
 var vaHomeLoan = new ResourceData('VA Home Loan', '1102 Quince St SE, Olympia, WA 98504 Mail Only', '8am-5pm M-F', '800-562-2308', 'N/A', str.link('https://www.benefits.va.gov/homeloans/'));
 var vfwLglAss = new ResourceData('VFW Legal Assistance', 'N/A', 'N/A', '877-447-4487', 'N/A', str.link('https://www.va.gov/ogc/legalservices.asp and http://statesidelegal.org/findinghelp'));
@@ -78,9 +80,13 @@ var compHouAllia = new ResourceData('Compass Housing Alliance - Seattle, WA', '7
 //code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
 
 var vaChoice = new ResourceData ('Va Choice Act', '810 Vermont Avenue, NW Washington DC, ', 'N/A', '866-606-8198', 'N/A', 'VA CHOICE ACT');
-var vaMission =  new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', 'https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp');
+var vaMission = new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', 'VA Mission Act of 2018');
 var waSoldier = new ResourceData('Washington Soldiers Home Orting Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', 'N/A', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');
-var naNational = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', 'https://nvf.org');
+var naNational = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', 'National Veterans Foundation');
+
+// code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
+
+
 
 var nameEl = document.getElementById('name');
 nameEl.textContent = 'Name: ' + vaChoice.name;
@@ -96,12 +102,7 @@ var linkStr = vaChoice.link;
 var url = linkStr.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp");
 document.getElementById("link").innerHTML = url;
 
-
-
-
 // code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
-
-
 // // we will need dom manip to present ResourceData / object data to a table / page or something
 // // based on form input..... could be a function we build for it.
 
@@ -203,12 +204,20 @@ function queryStart(event){
       break;
         break;
 
-      case 'post911':
-      //code here
-        break;
+      var nameEl = document.getElementById('name');
+      nameEl.textContent = 'Name: ' + vocrehab.name;
+      var locEl = document.getElementById('location');
+      locEl.textContent = 'Location : ' + vocrehab.location;
+      var hourEl = document.getElementById('hours');
+      hourEl.textContent = 'Hours : ' + vocrehab.hours;
+      var phEl = document.getElementById('phone');
+      phEl.textContent = 'Phone : ' + vocrehab.phone;
+      var emailEl = document.getElementById('email');
+      emailEl.textContent = 'Email : ' + vocrehab.email;
+      var linkStr = vocrehab.link;
+      var url = linkStr.link("https://www.benefits.va.gov/vocrehab/edu_voc_counseling.asp");
+      document.getElementById("link").innerHTML = url;
 
-      case 'vocRehab':
-      //code here
         break;
 
       case 'busLoan':
@@ -229,34 +238,141 @@ function queryStart(event){
 
       case 'homLoan':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + vaHomeLoan.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + vaHomeLoan.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + vaHomeLoan.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + vaHomeLoan.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + vaHomeLoan.email;
+          var linkStr = vaHomeLoan.link;
+          var url = linkStr.link("https://www.benefits.va.gov/homeloans/");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'lglSer':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + vfwLglAss.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + vfwSeattle.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + vfwLglAss.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + vfwLglAss.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + vfwLglAss.email;
+          var linkStr = vfwLglAss.link;
+          var url = linkStr.link("https://www.va.gov/ogc/legalservices.asp and http://statesidelegal.org/findinghelp");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'vfw':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + vfwSeattle.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + vfwSeattle.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + vfwSeattle.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + vfwSeattle.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + vfwSeattle.email;
+          var linkStr = vfwSeattle.link;
+          var url = linkStr.link("www.vfwseattle.org/");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'al':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + alSeattle.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + alSeattle.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + alSeattle.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + alSeattle.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + alSeattle.email;
+          var linkStr = alSeattle.link;
+          var url = linkStr.link("https://www.legion.org/ and http://www.post206.org/");
+          document.getElementById("link").innerHTML = url;
+
         break;
 
       case 'wwp':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + wwproject.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + wwproject.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + wwproject.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + wwproject.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + wwproject.email;
+          var linkStr = wwproject.link;
+          var url = linkStr.link("https://www.woundedwarriorproject.org/");
+          document.getElementById("link").innerHTML = url;
+
         break;
 
       case 'veoa':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + veoact.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + veoact.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + veoact.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + veoact.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + veoact.email;
+          var linkStr = veoact.link;
+          var url = linkStr.link("https://www.benefits.va.gov/WARMS/docs/admin28/M28R/Part_VI/pt06_ch08_secA.pdf");
+          document.getElementById("link").innerHTML = url;
         break;
 
       case 'vra':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + vrappointment.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + vrappointment.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + vrappointment.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + vrappointment.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + vrappointment.email;
+          var linkStr = vrappointment.link;
+          var url = linkStr.link("https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/veterans/vra/");
+          document.getElementById("link").innerHTML = url;
+
         break;
 
       case 'cha':
       //code here
+          var nameEl = document.getElementById('name');
+          nameEl.textContent = 'Name: ' + compHouAllia.name;
+          var locEl = document.getElementById('location');
+          locEl.textContent = 'Location : ' + compHouAllia.location;
+          var hourEl = document.getElementById('hours');
+          hourEl.textContent = 'Hours : ' + compHouAllia.hours;
+          var phEl = document.getElementById('phone');
+          phEl.textContent = 'Phone : ' + compHouAllia.phone;
+          var emailEl = document.getElementById('email');
+          emailEl.textContent = 'Email : ' + compHouAllia.email;
+          var linkStr = compHouAllia.link;
+          var url = linkStr.link("http://www.compasshousingalliance.org/");
+          document.getElementById("link").innerHTML = url;
         break;
       }
     }}}
