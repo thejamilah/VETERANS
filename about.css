@@ -22,7 +22,7 @@ header ul li {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding-top: 10%;
+  padding-top: 9%;
   /* margin-top: 3%; */
   }
 
@@ -46,6 +46,8 @@ section div {
 
 h2 {
   font-size: 20px;
+  font-weight: bold;
+  line-height: 2em;
 }
 
 section div p {
