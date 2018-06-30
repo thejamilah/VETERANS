@@ -1,0 +1,38 @@
+H1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 75px;
+	font-weight: bold;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#flag {
+padding-top: 90px;
+margin-right: auto;
+margin-left: auto;
+display: block;
+}
+
+#slogan{
+	text-align: center;
+	font-weight: bold;
+	line-height: 2em;
+	max-width: 500px;
+	margin-top: 4em;
+	font-family: 'Cinzel', serif;
+	font-size: 20px;
+	color: black;
+	opacity: none;
+	margin-left: 400px;
+}
+#carl {
+	width: 145px;
+  height: 40px;
+  background-color: darkred;
+	color: white;
+	margin-bottom: 2em;
+	border: 1px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

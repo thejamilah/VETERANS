@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resource Finder</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <header>
+                <nav>
+                    <span>
+                    <ul>
+                        <li>
+                            <a href="intro.html">Home Page</a>
+                        </li>
+                        <li>
+                            <a href="main.html">Resource Finder</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </span>
+                </nav>
+            </header>
+            <div class="force">
+            <img id="airforce" img src="img/airforce 300px.png">
+            <img id="army" img src="img/army 300px.png">
+            <img id="navy" img src="img/navy 300px.png">
+            <img id="marine" img src="img/marines 300px.png">
+            <img id="coast" img src="img/coast 300.png">
+            </div>
+            <div id="questions">
+                <Fieldset>
+                <form id="startForm">
+                <input type="radio" id="health", class="first" name="formStart" value="health">
+                <label for ="health">Health and Wellness</label>
+                <input type="radio", id="education", class="first" name="formStart" value="education">
+                <label for ="education">Education</label>
+                <input type="radio", id="financial", class="first" name="formStart" value="financial">
+                <label for ="financial">Financial and Legal Services</label>
+                <input type="radio", id="community", class="first" name="formStart" value="community">
+                <label for ="community">Community Organizations</label>
+                <input type="radio", id="employment", class="first" name="formStart" value="employment">
+                <label for ="employment">Employment and Homelessness</label>
+                <button type="submit" id="startNext" class="next">NEXT</button>
+            </form>
+        </table>
+        </Fieldset>
+        <fieldset>
+            <form id="healthForm">
+                <input type="radio" id="healthCareBen", class="second" name="formHealth" value="healthCareBen">
+                <label for ="healthCareBen">Health Care Benefits</label>
+                <input type="radio" id="menHealth", class="second" name="formHealth" value="menHealth">
+                <label for ="menHealth">Mental Health</label>
+                <input type="radio" id="subsAbuse", class="second" name="formHealth" value="subsAbuse">
+                <label for ="subsAbuse">Substance Abuse</label>
+                <button type="submit" id="healthNext" class="next">NEXT</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <form id="edForm">
+                <input type="radio" id="montGi", class="third" name="formEd" value="montGi">
+                <label for ="montGi">Montgomery GI Bill</label>
+                <input type="radio" id="post911", class="third" name="formEd" value="post911">
+                <label for ="post911">Post 911 GI Bill</label>
+                <input type="radio" id="vocRehab", class="third" name="formEd" value="vocRehab">
+                <label for ="vocRehab">VOC REHAB</label>
+                <button type="submit" id="eduNext" class="next">NEXT</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <form id="finForm">
+                <input type="radio" id="busLoan", class="fourth" name="formFin" value="busLoan">
+                <label for ="busLoan">Business Loans</label>
+                <input type="radio" id="homLoan", class="fourth" name="formFin" value="homLoan">
+                <label for ="homLoan">VA Home Loans</label>
+                <input type="radio" id="lglSer", class="fourth" name="formFin" value="lglSer">
+                <label for ="lglSer">Legal Services</label>
+                <button type="submit" id="finNext" class="next">NEXT</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <form id="comOrgForm">
+                <input type="radio" id="vfw", class="fifth" name="formComm" value="vfw">
+                <label for ="vfw">Veterans of Foreign Wars</label>
+                <input type="radio" id="al", class="fifth" name="formComm" value="al">
+                <label for ="al">American Legion</label>
+                <input type="radio" id="wwp", class="fifth" name="formComm" value="wwp">
+                <label for ="wwp">Wounded Warrior Project</label>
+                <button type="submit" id="commNext" class="next">NEXT</button>
+            </form>
+        </fieldset>
+        <fieldset>
+            <form id="employAndHome">
+                <input type="radio" id="veoa", class="sixth" name="formEmp" value="veoa">
+                <label for ="veoa">Vetrans' Employment Opportunities Act</label>
+                <input type="radio" id="vra", class="sixth" name="formEmp" value="vra">
+                <label for ="vra">Vetrans' Recruitment Appointment</label>
+                <input type="radio" id="cha", class="sixth" name="formEmp" value="cha">
+                <label for ="cha">Compass Housing Alliance</label>
+                <button type="submit" id="employNext" class="next">NEXT</button>
+            </form>
+        </fieldset>
+        <table id="hcare"></table>
+        <div id="render"> 
+                <ul id="info">
+                    <li id = "name"></li>
+                    <li id = "location"></li>
+                    <li id = "hours"></li>
+                    <li id = "phone"></li>
+                    <li id = "email"></li>
+                    <li id = "link"></li>
+                </ul>
+    </div>
+    </body>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

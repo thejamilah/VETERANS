@@ -1,0 +1,59 @@
+header {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+  background:-webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+  background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* ie6-9 */;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+}
+
+header ul li {
+  display: inline-block;
+  margin-top: 40px;
+  }
+
+#banner {
+  height: 350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 9%;
+  /* margin-top: 3%; */
+  }
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+section img {
+  float: left;
+  border-radius: 50%;
+}
+
+section div {
+  width: calc(50% - 30px);
+  float: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+section div p {
+height: 320px;
+overflow: auto;
+font-size: 16px;
+line-height: 22px;
+font-style: italic;
+}
