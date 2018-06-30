@@ -17,6 +17,7 @@ This project represents the culmination of the Code Fellows 201n11 course.  Writ
 * w3schools - (https://www.w3schools.com)
 *Medallions by - (http://www.woodlandmanufacturing.com/military-seals.html)
 *military images provided by - (https://images.google.com/)
+*Google Fonts - (https://fonts.google.com/)
 	
 	Web Resources
 	• ("http://www.compasshousingalliance.org/")
