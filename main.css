@@ -36,6 +36,10 @@ header ul li {
   margin-left: 100px;
 }
 
+#render {
+  display: none;
+}
+
 #healthForm {
   display: none;
 }
