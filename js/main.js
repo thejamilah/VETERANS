@@ -71,7 +71,6 @@ function homeless(){
   var build9 = new ResourceData('Building 9 for Veterans Transitional Housing Program - Retsil, WA', 'WA Veterans Home 1141 Beach Drive E, Building 9, Port Orchard, WA 98366', 'Mon - Fri 8:30 - 4:30','(360) 895-4371', 'N/A', str.link('http://www.dva.wa.gov/veteran-homes/building-9-veterans-transitional-housing-program'));
 }
 
-
 //code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
 
 
