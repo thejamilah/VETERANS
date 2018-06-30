@@ -32,27 +32,28 @@ var nineEleven = new ResourceData('9/11 GI Bill', 'N/A', '8AM-5PM PST', '1-888-4
 var vocrehab = new ResourceData('VOC Rehab', 'Jackson Federal Building, 915 2nd Ave, Seattle, WA 98174', '8am-4pm M-F', '800-827-1000', 'N/A', str.link('https://www.benefits.va.gov/vocrehab/edu_voc_counseling.asp'));
 // Financial and Legal Resources
 var smBusLoans = new ResourceData('VA Small and Veteran Business Programs', '810 Vermone Avenue, NW Washington, DC 20420 Mail Only', '8am-6pm Eastern Standard Time', '866-584-2344', 'osdbu@va.gov', str.link('https://www.va.gov/osdbu/'));
-var vaHomeLoan = new ResourceData('VA Home Loan', '1102 Quince St SE, Olympia, WA 98504 Mail Only', '8am-5pm M-F', '800-562-2308', 'N/A', str.link('https://www.benefits.va.gov/homeloans/'));
-var vfwLglAss = new ResourceData('VFW Legal Assistance', 'N/A', 'N/A', '877-447-4487', 'N/A', str.link('https://www.va.gov/ogc/legalservices.asp and http://statesidelegal.org/findinghelp'));
+var vaHomeLoan = new ResourceData('VA Home Loan', '1102 Quince St SE, Olympia, WA 98504 Mail Only', '8am-5pm M-F', '800-562-2308', 'N/A', 'VA Home Loan');
+var vfwLglAss = new ResourceData('VFW Legal Assistance', 'N/A', 'N/A', '877-447-4487', 'N/A', 'VFW Legal Assistance');
 // Community Organizations 
-var vfwSeattle = new ResourceData('Veterans of Foreign Wars', '2812 NW Market St., Seattle, WA 98107', 'N/A', '206-782-8618', 'vfwseattle@email.com', str.link ('www.vfwseattle.org/'));
-var alSeattle = new ResourceData('American Legion', '8201 Lake City Way NE, Seattle, WA 98115', '6:30pm-7:15pm 1st Tuesday of the Month', '(206) 552-0836', 'commander@post206.org', str.link('https://www.legion.org/ and http://www.post206.org/'));
-var wwproject = new ResourceData('Wounded Warrior Project', 'N/A', '9am-7pm Eastern Standard Time', '888-997-2586', 'resourcecenter@woundedwarriorproject.org', str.link('https://www.woundedwarriorproject.org/'));
+var vfwSeattle = new ResourceData('Veterans of Foreign Wars', '2812 NW Market St., Seattle, WA 98107', 'N/A', '206-782-8618', 'vfwseattle@email.com', 'Veterans of Foreign Wars');
+var alSeattle = new ResourceData('American Legion', '8201 Lake City Way NE, Seattle, WA 98115', '6:30pm-7:15pm 1st Tuesday of the Month', '(206) 552-0836', 'commander@post206.org', str.link('American Legion');
+var wwproject = new ResourceData('Wounded Warrior Project', 'N/A', '9am-7pm Eastern Standard Time', '888-997-2586', 'resourcecenter@woundedwarriorproject.org', 'Wounded Warrior Project');
 // Employment Resources
-var veoact = new ResourceData('Veterans Employment Opportunities Act', 'N/A', 'N/A', 'N/A', 'N/A', str.link('https://www.benefits.va.gov/WARMS/docs/admin28/M28R/Part_VI/pt06_ch08_secA.pdf'));
-var vrappointment = new ResourceData('Veterans Recruitment Appointment (VRA)', 'N/A', 'N/A', 'N/A', 'N/A', str.link('https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/veterans/vra/'));
-var vow2hireheroes = new ResourceData('VOW to Hire Heroes Act', '1360 Union Hill Road, Bldg. 2, Suite A, Alpharetta, GA 30004', 'N/A', '844-634-1520', 'vets@hireheroeusa.org', str.link('https://www.benefits.va.gov/vow/ and http://www.hireheroesusa.org/'));
+var veoact = new ResourceData('Veterans Employment Opportunities Act', 'N/A', 'N/A', 'N/A', 'N/A', 'Veterans Employment Opportunities Act');
+var vrappointment = new ResourceData('Veterans Recruitment Appointment (VRA)', 'N/A', 'N/A', 'N/A', 'N/A', 'Veterans Recruitment Appointment (VRA)');
+var vow2hireheroes = new ResourceData('VOW to Hire Heroes Act', '1360 Union Hill Road, Bldg. 2, Suite A, Alpharetta, GA 30004', 'N/A', '844-634-1520', 'vets@hireheroeusa.org', 'VOW to Hire Heroes Act');
 // Homeless Resources
-var millionairesClub = new ResourceData('The Millionaires Club - Seattle', '2515 Western Ave, Seattle, WA 98121', '24', '(206) 728-5627', 'N/A', str.link('https://www.millionairclub.org/'));
-var vaHomelessOutreach = new ResourceData('VA Homeless Outreach Clinic - Seattle, WA', 'N/A', 'N/A', '(425)-203-7200', 'N/A', str.link('https://www.pugetsound.va.gov/services/homeless/index.asp'));
-var compHouAllia = new ResourceData('Compass Housing Alliance - Seattle, WA', '77 S Washington ST, Seattle WA', '8:30am - 5pm', '(206)474-1910', 'N/A', str.link('http://www.compasshousingalliance.org/'));
+var millionairesClub = new ResourceData('The Millionaires Club - Seattle', '2515 Western Ave, Seattle, WA 98121', '24', '(206) 728-5627', 'N/A', 'The Millionaires Club - Seattle');
+var vaHomelessOutreach = new ResourceData('VA Homeless Outreach Clinic - Seattle, WA', 'N/A', 'N/A', '(425)-203-7200', 'N/A', 'VA Homeless Outreach Clinic - Seattle, WA');
+var compHouAllia = new ResourceData('Compass Housing Alliance - Seattle, WA', '77 S Washington ST, Seattle WA', '8:30am - 5pm', '(206)474-1910', 'N/A', 'Compass Housing Alliance - Seattle, WA');
 //code for the object rendering will go into the case for whichever is chosen at the end of our tool.... so case nine-eleven would have the dom manipulation for the object "nineEleven" as listed above... should probably be done to a table for each object property.
 
 var vaChoice = new ResourceData ('Va Choice Act', '810 Vermont Avenue, NW Washington DC, ', 'N/A', '866-606-8198', 'N/A', 'VA CHOICE ACT');
-var vaMission =  new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', 'https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp');
+var vaMission = new ResourceData('VA Mission Act of 2018', 'N/A', 'N/A', 'N/A', 'N/A', 'VA Mission Act of 2018');
 var waSoldier = new ResourceData('Washington Soldiers Home Orting Wa', '1301 Orting Kapowsin Hwy, Orting, WA 98360', 'N/A', 'Main:(360) 893-4515 Admissions: (877) 838-7787', 'SophieP@dva.wa.gov');
-var naNational = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', 'https://nvf.org');
+var naNational = new ResourceData('National Veterans Foundation', 'N/A', 'N/A', 'N/A', 'N/A', 'National Veterans Foundation');
 
+vaChoice
 var nameEl = document.getElementById('name');
 nameEl.textContent = 'Name: ' + vaChoice.name;
 var locEl = document.getElementById('location');
@@ -65,6 +66,188 @@ var emailEl = document.getElementById('email');
 emailEl.textContent = 'Email : ' + vaChoice.email;
 var linkStr = vaChoice.link;
 var url = linkStr.link("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp");
+document.getElementById("link").innerHTML = url;
+
+naNational
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + naNational.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + naNational.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + naNational.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + naNational.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + naNational.email;
+var linkStr = naNational.link;
+var url = linkStr.link("https://nvf.org");
+document.getElementById("link").innerHTML = url;
+
+compHouAllia
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + compHouAllia.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + compHouAllia.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + compHouAllia.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + compHouAllia.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + compHouAllia.email;
+var linkStr = compHouAllia.link;
+var url = linkStr.link("http://www.compasshousingalliance.org/");
+document.getElementById("link").innerHTML = url;
+
+vaHomelessOutreach
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vaHomelessOutreach.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vaHomelessOutreach.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vaHomelessOutreach.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vaHomelessOutreach.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vaHomelessOutreach.email;
+var linkStr = vaHomelessOutreach.link;
+var url = linkStr.link("https://www.pugetsound.va.gov/services/homeless/index.asp");
+document.getElementById("link").innerHTML = url;
+
+millionairesClub
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + millionairesClub.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + millionairesClub.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + millionairesClub.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + millionairesClub.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + millionairesClub.email;
+var linkStr = millionairesClub.link;
+var url = linkStr.link("https://www.millionairclub.org/");
+document.getElementById("link").innerHTML = url;
+
+
+
+vow2hireheroes
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vow2hireheroes.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vow2hireheroes.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vow2hireheroes.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vow2hireheroes.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vow2hireheroes.email;
+var linkStr = vow2hireheroes.link;
+var url = linkStr.link("https://www.benefits.va.gov/vow/ and http://www.hireheroesusa.org/");
+document.getElementById("link").innerHTML = url;
+
+vrappointment
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vrappointment.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vrappointment.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vrappointment.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vrappointment.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vrappointment.email;
+var linkStr = vrappointment.link;
+var url = linkStr.link("https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/veterans/vra/");
+document.getElementById("link").innerHTML = url;
+
+veoact
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + veoact.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + veoact.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + veoact.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + veoact.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + veoact.email;
+var linkStr = veoact.link;
+var url = linkStr.link("https://www.benefits.va.gov/WARMS/docs/admin28/M28R/Part_VI/pt06_ch08_secA.pdf");
+document.getElementById("link").innerHTML = url;
+
+wwproject
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + wwproject.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + wwproject.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + wwproject.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + wwproject.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + wwproject.email;
+var linkStr = wwproject.link;
+var url = linkStr.link("https://www.woundedwarriorproject.org/");
+document.getElementById("link").innerHTML = url;
+
+alSeattle
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + alSeattle.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + alSeattle.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + alSeattle.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + alSeattle.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + alSeattle.email;
+var linkStr = alSeattle.link;
+var url = linkStr.link("https://www.legion.org/ and http://www.post206.org/");
+document.getElementById("link").innerHTML = url;
+
+vfwSeattle
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vfwSeattle.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vfwSeattle.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vfwSeattle.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vfwSeattle.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vfwSeattle.email;
+var linkStr = vfwSeattle.link; 
+var url = linkStr.link("www.vfwseattle.org/");
+document.getElementById("link").innerHTML = url;
+
+vfwLglAss
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vfwLglAss.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vfwSeattle.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vfwLglAss.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vfwLglAss.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vfwLglAss.email;
+var linkStr = vfwLglAss.link;
+var url = linkStr.link("https://www.va.gov/ogc/legalservices.asp and http://statesidelegal.org/findinghelp");
+document.getElementById("link").innerHTML = url;
+
+vaHomeLoan
+var nameEl = document.getElementById('name');
+nameEl.textContent = 'Name: ' + vaHomeLoan.name;
+var locEl = document.getElementById('location');
+locEl.textContent = 'Location : ' + vaHomeLoan.location;
+var hourEl = document.getElementById('hours');
+hourEl.textContent = 'Hours : ' + vaHomeLoan.hours;
+var phEl = document.getElementById('phone');
+phEl.textContent = 'Phone : ' + vaHomeLoan.phone;
+var emailEl = document.getElementById('email');
+emailEl.textContent = 'Email : ' + vaHomeLoan.email;
+var linkStr = vaHomeLoan.link;
+var url = linkStr.link("https://www.benefits.va.gov/homeloans/");
 document.getElementById("link").innerHTML = url;
 
 
