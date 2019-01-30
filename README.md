@@ -2,7 +2,7 @@
  
 ## Purpose
 
-This project represents the culmination of the Code Fellows 201n11 course.  Written entirely in Vanilla JavaScript, along with HTML5/CSS, we developed a resource site supporting Vets to make the connection in getting their lives on a better track.   As a Vet, family or community member, no matter what you may be experiencing, there is support for getting many, many Veterans the strength to reach out and make the connection in finding the Veteran resources most helpful.  While this is a work in progress, we hope you will find this site enjoyable and resourceful.  We look forward to continue updating the site with new features and resources worth learning about.  
+This project began as a learning opportunity.  Written entirely in Vanilla JavaScript, along with HTML5/CSS3, we developed a resource site supporting Vets to make the connection in getting their lives on a better track.   As a Vet, family or community member, no matter what you may be experiencing, there is support for getting many, many Veterans the strength to reach out and make the connection in finding the Veteran resources most helpful.  While this is a work in progress, we hope you will find this site enjoyable and resourceful.  We look forward to continue updating the site with new features and resources worth learning about.  
 
 ## Authors
 
