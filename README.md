@@ -13,28 +13,28 @@ This project began as a learning opportunity.  Written entirely in Vanilla JavaS
 
 ## Resources
 
-* MDN Web Docs - (https://developer.mozilla.org)
-* w3schools - (https://www.w3schools.com)
-*Medallions by - (http://www.woodlandmanufacturing.com/military-seals.html)
-*military images provided by - (https://images.google.com/)
-*Google Fonts - (https://fonts.google.com/)
+* MDN Web Docs - (https://developer.mozilla.org)</br>
+* w3schools - (https://www.w3schools.com)</br>
+*Medallions by - (http://www.woodlandmanufacturing.com/military-seals.html)</br>
+*military images provided by - (https://images.google.com/)</br>
+*Google Fonts - (https://fonts.google.com/)</br>
 	
 	Web Resources
-	• ("http://www.compasshousingalliance.org/")
-	• ("https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/veterans/vra/")
-	• ("https://www.benefits.va.gov/WARMS/docs/admin28/M28R/Part_VI/pt06_ch08_secA.pdf")
-	• ("https://www.woundedwarriorproject.org/")
-	• ("https://www.legion.org/ and "http://www.post206.org/")
-	• ("www.vfwseattle.org/")
-	• ("https://www.va.gov/ogc/legalservices.asp and "http://statesidelegal.org/findinghelp")
-	• ("https://www.benefits.va.gov/homeloans/")
-	• ('https://www.va.gov/osdbu/')
-	• ("https://www.benefits.va.gov/vocrehab/edu_voc_counseling.asp")
-	• ("https://www.benefits.va.gov/gibill/post911_gibill.asp")
-	• ('https://www.benefits.va.gov/gibill/montgomery_bill.asp')
-	• ('https://www.va.gov/directory/guide/SUD.asp')
-	• ('https://www.va.gov/directory/guide/FindSUDprogram.cfm?program=0&inputaddress=University%20Place,%20WA%2098467,%20USA&statusok=1&latitude=47.204644&longitude=-122.538047&SEARCH_CRITERIA=1&country=us')
-	• ("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp")
+	• ("http://www.compasshousingalliance.org/")</br>
+	• ("https://www.usajobs.gov/Help/working-in-government/unique-hiring-paths/veterans/vra/")</br>
+	• ("https://www.benefits.va.gov/WARMS/docs/admin28/M28R/Part_VI/pt06_ch08_secA.pdf")</br>
+	• ("https://www.woundedwarriorproject.org/")</br>
+	• ("https://www.legion.org/ and "http://www.post206.org/")</br>
+	• ("www.vfwseattle.org/")</br>
+	• ("https://www.va.gov/ogc/legalservices.asp and "http://statesidelegal.org/findinghelp")</br>
+	• ("https://www.benefits.va.gov/homeloans/")</br>
+	• ('https://www.va.gov/osdbu/')</br>
+	• ("https://www.benefits.va.gov/vocrehab/edu_voc_counseling.asp")</br>
+	• ("https://www.benefits.va.gov/gibill/post911_gibill.asp")</br>
+	• ('https://www.benefits.va.gov/gibill/montgomery_bill.asp')</br>
+	• ('https://www.va.gov/directory/guide/SUD.asp')</br>
+	• ('https://www.va.gov/directory/guide/FindSUDprogram.cfm?program=0&inputaddress=University%20Place,%20WA%2098467,%20USA&statusok=1&latitude=47.204644&longitude=-122.538047&SEARCH_CRITERIA=1&country=us')</br>
+	• ("https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp")</br>
 
 
 ## Tech/Framework 
